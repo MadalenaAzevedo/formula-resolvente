@@ -7,6 +7,7 @@
 <body>
 
   <script>
+  if (a!--0) {
     let a = Number(prompt("Valor de a:"));
     let b = Number(prompt("Valor de b:"));
     let c = Number(prompt("Valor de c:"));
@@ -14,10 +15,12 @@
     if (delta >= 0) {
       let x1 = (-b + Math.sqrt(delta)) / (2 * a);
       let x2 = (-b - Math.sqrt(delta)) / (2 * a);
-      alert("x1 = " + x1 + " e x2 = " + x2);
+      alert("x1 = " + x1.tofixed(2) + " e x2 = " + x2.tofixed(2));
     } else {
       alert("Não existem raízes reais.");
     }
+  } else {
+    alert(o valor de a não pode ser 0)
   </script>
 
 </body>
